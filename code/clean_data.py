@@ -54,6 +54,8 @@ fig = sns.kdeplot(df_movies['release_year'],\
 
 plt.axvline(df_movies['release_year'].max(), linestyle = '--', color = 'k', label = 'Threshold')
 plt.legend(loc='upper right')
+plt.xlabel("years")
+plt.ylabel("frequency")
 
 
 # Which genres are most popular from years
@@ -97,7 +99,11 @@ sns.heatmap(df_movies.corr(),\
             annot = True,\
             linewidths=.5,\
             fmt = '.1f',\
-            ax = ax)
+            ax = ax,\
+            cbar_kws={'label': 'heat index'})\
+            .set_title('correlation dataset')
+plt.xlabel("Values on X axis")
+plt.ylabel('Values on Y axis')
 
 
 # Revenue vs Budget
