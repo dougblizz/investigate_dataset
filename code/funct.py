@@ -25,7 +25,8 @@ def plot_scatter(df, col1, col2, year):
                     size = year,\
                     alpha = 0.5,\
                     sizes = (20,300),\
-                    data = df)
+                    data = df)\
+                    .set_title(f"{col1} vs {col2}")
         
 def quantity(df, col):
     
