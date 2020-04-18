@@ -26,7 +26,7 @@ This project created to clean and produce analysis at the cost of a dataset, in 
 
 -   **TMDB 5000 Movie**
 
-## Libreries
+## Libraries
 
 -   pandas
 -   matplotlib
